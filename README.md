@@ -39,13 +39,13 @@ python scripts/spatial_overlap_analysis.py
 
 # Repository Structure
 
-"tDCS-fMRI-SpatialOverlap/
+tDCS-fMRI-SpatialOverlap/
 ├── scripts/
 │   └── spatial_overlap_analysis.py     # Main analysis script
 ├── config/
 │   └── config.yaml                     # Your configuration
 └── README.md
-"
+
 
  
 
