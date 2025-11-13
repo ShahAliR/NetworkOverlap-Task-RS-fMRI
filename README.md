@@ -17,6 +17,7 @@ pip install nibabel nilearn scipy numpy matplotlib pyyaml
 update config/config.yaml with your paths:
 
 config.yaml:
+
   task_map: "/path/to/your/task_statistical_map.nii.gz"
   rest_map: "/path/to/your/resting_state_connectivity_map.nii.gz"
   mask: "/path/to/your/brain_mask.nii.gz"  # Optional
