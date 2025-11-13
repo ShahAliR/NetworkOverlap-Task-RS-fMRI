@@ -8,12 +8,12 @@ This code quantifies the spatial correspondence between intrinsic functional con
 
 
 
-## Quick Start
+# Quick Start
 
-### 1. Install Dependencies
+## 1. Install Dependencies
 
 pip install nibabel nilearn scipy numpy matplotlib pyyaml
-### 2. Create Configuration File
+## 2. Create Configuration File
 update config/config.yaml with your paths:
 
 config.yaml:
@@ -33,11 +33,11 @@ analysis:
   task_fwe_threshold: 3.6459
   rest_fwe_threshold: 3.3328
   binary_threshold_alpha: 0.001
-### 3. Run Analysis
+## 3. Run Analysis
 
 python scripts/spatial_overlap_analysis.py
 
-# Repository Structure
+## Repository Structure
 
 tDCS-fMRI-SpatialOverlap/
 ├── scripts/
@@ -49,10 +49,10 @@ tDCS-fMRI-SpatialOverlap/
 
  
 
-# Citation
+## Citation
 If using this tool, please cite:
 
-# License
+## License
 MIT License
 
  
