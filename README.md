@@ -11,10 +11,10 @@ This code quantifies the spatial correspondence between intrinsic functional con
 ## Quick Start
 
 ### 1. Install Dependencies
-```bash
-"pip install nibabel nilearn scipy numpy matplotlib pyyaml
-2. Create Configuration File
-Create config/config.yaml with your paths:
+
+pip install nibabel nilearn scipy numpy matplotlib pyyaml
+### 2. Create Configuration File
+update config/config.yaml with your paths:
 
 config.yaml:
   task_map: "/path/to/your/task_statistical_map.nii.gz"
@@ -28,7 +28,7 @@ analysis:
   task_fwe_threshold: 3.6459
   rest_fwe_threshold: 3.3328
   binary_threshold_alpha: 0.001
-3. Run Analysis
+### 3. Run Analysis
 
 python scripts/spatial_overlap_analysis.py
 
