@@ -7,20 +7,16 @@ This repository contains the custom Python scripts for the spatial overlap analy
 This code quantifies the spatial correspondence between intrinsic functional connectivity (FC) maps derived from resting-state fMRI and task-evoked activation maps. The pipeline is applied to two distinct functional networks: a visuo-spatial memory network (rOTC seed & OLM task) and a language learning network (lvIFG seed & APPL task).
 
 
-# Spatial Overlap Analysis for tDCS-fMRI Studies
-
-A Python tool for quantifying spatial overlap between resting-state functional connectivity networks and task-evoked activation patterns. Supports target selection for focal tDCS studies.
 
 ## Quick Start
 
 ### 1. Install Dependencies
 ```bash
-pip install nibabel nilearn scipy numpy matplotlib pyyaml
+"pip install nibabel nilearn scipy numpy matplotlib pyyaml
 2. Create Configuration File
 Create config/config.yaml with your paths:
 
-yaml
-paths:
+config.yaml:
   task_map: "/path/to/your/task_statistical_map.nii.gz"
   rest_map: "/path/to/your/resting_state_connectivity_map.nii.gz"
   mask: "/path/to/your/brain_mask.nii.gz"  # Optional
@@ -33,10 +29,11 @@ analysis:
   rest_fwe_threshold: 3.3328
   binary_threshold_alpha: 0.001
 3. Run Analysis
-bash
+
 python scripts/spatial_overlap_analysis.py
+
 Repository Structure
-text
+
 tDCS-fMRI-SpatialOverlap/
 ├── scripts/
 │   └── spatial_overlap_analysis.py     # Main analysis script
@@ -74,7 +71,7 @@ threshold_sensitivity.csv: Dice values across thresholds
 threshold_sensitivity.png: Sensitivity plot
 
 Command Line Options
-bash
+
 # Use default config
 python scripts/spatial_overlap_analysis.py
 
