@@ -32,7 +32,7 @@ analysis:
 
 python scripts/spatial_overlap_analysis.py
 
-Repository Structure
+# Repository Structure
 
 tDCS-fMRI-SpatialOverlap/
 ├── scripts/
@@ -40,69 +40,14 @@ tDCS-fMRI-SpatialOverlap/
 ├── config/
 │   └── config.yaml                     # Your configuration
 └── README.md
-Configuration Parameters
-task_map: Task statistical map (t-map)
 
-rest_map: Resting-state connectivity map
 
-mask: Brain mask (optional)
+ 
 
-output_dir: Results directory
-
-task_df/rest_df: Degrees of freedom for t-tests
-
-task_fwe_threshold/rest_fwe_threshold: FWE-corrected t-values
-
-binary_threshold_alpha: Alpha for binary overlap (default: 0.001)
-
-Output Files
-spatial_overlap_metrics.txt: Dice coefficient, correlation, voxel counts
-
-task_specific.nii.gz: Regions only significant in task
-
-rest_specific.nii.gz: Regions only in resting-state network
-
-overlap.nii.gz: Overlapping regions
-
-combined_map.nii.gz: Combined visualization (1=task, 2=rest, 3=overlap)
-
-threshold_sensitivity.csv: Dice values across thresholds
-
-threshold_sensitivity.png: Sensitivity plot
-
-Command Line Options
-
-# Use default config
-python scripts/spatial_overlap_analysis.py
-
-# Custom config file
-python scripts/spatial_overlap_analysis.py --config config/my_config.yaml
-
-# Custom output directory
-python scripts/spatial_overlap_analysis.py --output-dir /path/to/results
-
-# Skip plot generation
-python scripts/spatial_overlap_analysis.py --no-plot
-Method
-Calculates spatial overlap using:
-
-Dice Similarity Coefficient: Overlap of thresholded binary maps
-
-Pearson Correlation: Voxel-wise spatial correlation
-
-Threshold Sensitivity: Dice values across statistical thresholds
-
-Citation
+# Citation
 If using this tool, please cite:
 
-bibtex
-@software{spatialoverlap2024,
-  title = {Spatial Overlap Analysis for tDCS-fMRI Studies},
-  author = {Your Name},
-  year = {2024},
-  url = {https://github.com/yourusername/tDCS-fMRI-SpatialOverlap}
-}
-License
+# License
 MIT License
 
-text
+ 
