@@ -19,9 +19,13 @@ update config/config.yaml with your paths:
 config.yaml:
 
   task_map: "/path/to/your/task_statistical_map.nii.gz"
+  
   rest_map: "/path/to/your/resting_state_connectivity_map.nii.gz"
+  
   mask: "/path/to/your/brain_mask.nii.gz"  # Optional
+  
   output_dir: "/path/to/your/results/"
+  
 
 analysis:
   task_df: 17
